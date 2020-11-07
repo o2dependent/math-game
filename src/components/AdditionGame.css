@@ -1,0 +1,104 @@
+:root {
+  --color1: #3fc2f0;
+  --color2: #03e5d3;
+  --color3: #6df1b0;
+  --color4: #b3f88b;
+  --color5: #f9f871;
+  --danger: #fa6a80;
+  --success: #27af69;
+  --border-radius: 5px;
+  --box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  --purp1: #dfa0db;
+  --purp2: #a76ba4;
+}
+
+.Game {
+  height: 95vh;
+  width: 95vw;
+  max-width: 1000px;
+  margin: 2.5vh auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.Game__problem {
+  flex-grow: 0.25;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color1);
+  margin-bottom: 4vh;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  font-size: 72px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.Game__option__container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 2vh;
+}
+
+button {
+  outline-color: #00000080;
+  font-size: 18px;
+  border: none;
+  min-height: 3rem;
+  margin-bottom: 2vh;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.Game__option {
+  flex-grow: 1;
+  font-size: 42px;
+  background-color: var(--color2);
+}
+
+.Game__option:nth-of-type(2) {
+  background-color: var(--color3);
+}
+.Game__option:nth-of-type(3) {
+  background-color: var(--color4);
+}
+.Game__option:nth-of-type(4) {
+  background-color: var(--color5);
+}
+
+.Game__selected {
+  border: 3px solid #00000080;
+  border-style: inset;
+  box-shadow: var(--box-shadow);
+}
+
+.Game__disabled {
+  opacity: 0.5;
+}
+
+.Game__submit {
+  flex-grow: 0.25;
+  border: none;
+  font-size: 42px;
+  min-height: 3rem;
+  margin-bottom: 2vh;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  background-color: var(--color1);
+}
+
+.Game__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  background-color: var(--purp1);
+  min-height: 3rem;
+  margin-bottom: 2vh;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
