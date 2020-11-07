@@ -49,7 +49,6 @@ button {
   font-size: 18px;
   border: none;
   min-height: 3rem;
-  margin-bottom: 2vh;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
 }
@@ -58,6 +57,7 @@ button {
   flex-grow: 1;
   font-size: 42px;
   background-color: var(--color2);
+  margin-bottom: 2vh;
 }
 
 .Game__option:nth-of-type(2) {
